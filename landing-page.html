@@ -3,13 +3,16 @@
     <head>
         <meta charset="utf-8">
         <title>QR Code Generator</title>
-
+        <link rel="stylesheet" href="./landing-style.css">
     </head>
     <body>
         <main>
             <div id="main-card">
                 <h1 id="qrcode-title">QRCODE</h1>
-                <input type="url" id="url-input" />
+                <form id="qr-form">
+                    <input type="url" id="url-input" />
+                    <input type="submit" id="url-submit" class="default-button" value="QR code"/>
+                </form>
             </div>
         </main>
         
