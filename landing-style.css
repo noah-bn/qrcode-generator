@@ -1,5 +1,6 @@
 :root {
     --button-color: #3762E4;
+    --button-hover: #6F8EEB;
 }
 
 html {
@@ -26,6 +27,7 @@ h1 {
     height: 750px;
     border: 2px solid black;
     background-color: #111629;
+    border-radius: 12px;
 }
 
 #qr-form {
@@ -61,4 +63,21 @@ h1 {
     color: white;
     border: none;
     border-radius: 6px;
+}
+
+.default-button:hover {
+    background-color: var(--button-hover);
+}
+
+#qr-buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
 }

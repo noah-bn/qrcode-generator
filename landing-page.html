@@ -14,12 +14,14 @@
                         <input type="url" id="url-input" />
                         <input type="button" id="url-submit" class="default-button" value="QR code"/>
                     </form>
-
-                    <div id="qr-container"></div>
                 </section>
 
-                <section id="qr-page">
-
+                <section id="qr-page" class="hidden">
+                    <div id="qr-container"></div>
+                    <div id="qr-buttons-container">
+                        <a id="download-button" class="default-button" download>Download</a>
+                        <button id="share-button" class="default-button">Share</button>
+                    </div>
                 </section>
             </div>
         </main>
